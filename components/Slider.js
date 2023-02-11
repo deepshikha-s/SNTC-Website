@@ -21,6 +21,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 export default function Slider(props) {
 
+
     return (
         <Swiper
             effect={'coverflow'}
@@ -43,15 +44,89 @@ export default function Slider(props) {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="swiper_container"
         >
-            <SwiperSlide>{Slide()}</SwiperSlide>
-            <SwiperSlide>{Slide()}</SwiperSlide>
-            <SwiperSlide>{Slide()}</SwiperSlide>
+            <SwiperSlide>
+                <div className="grid md:grid-cols-2">
+                    <div className="image">
+
+                        <Image src={props.slides[0].source} width={700} height={500} alt="This is an image." />
+                    </div>
+                    <div className="info flex justify-center flex-col">
+
+                        <div className="title">
+                            <p className="font-bold text-4xl pb-12">
+                                Title
+                            </p>
+                        </div>
+                        <p className="text-gray-500 py-3">
+                            Description
+                        </p>
+
+                    </div>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide> <div className="grid md:grid-cols-2">
+                <div className="image">
+
+                    <Image src={props.slides[1].source} width={800} height={400} alt="This is an image." />
+                </div>
+                <div className="info flex justify-center flex-col">
+
+                    <div className="title">
+                        <p className="font-bold text-4xl pb-12">
+                            Title
+                        </p>
+                    </div>
+                    <p className="text-gray-500 py-3">
+                        Description
+                    </p>
+
+                </div>
+            </div></SwiperSlide>
+
+            <SwiperSlide> <div className="grid md:grid-cols-2">
+                <div className="image">
+
+                    <Image src={props.slides[2].source} width={700} height={400} alt="This is an image." />
+                </div>
+                <div className="info flex justify-center flex-col">
+
+                    <div className="title">
+                        <p className="font-bold text-4xl pb-12">
+                            Title
+                        </p>
+                    </div>
+                    <p className="text-gray-500 py-3">
+                        Description
+                    </p>
+
+                </div>
+            </div></SwiperSlide>
+
+            <SwiperSlide> <div className="grid md:grid-cols-2">
+                <div className="image">
+
+                    <Image src={props.slides[3].source} width={800} height={400} alt="This is an image." />
+                </div>
+                <div className="info flex justify-center flex-col">
+
+                    <div className="title">
+                        <p className="font-bold text-4xl pb-12">
+                            Title
+                        </p>
+                    </div>
+                    <p className="text-gray-500 py-3">
+                        Description
+                    </p>
+
+                </div>
+            </div></SwiperSlide>
 
             <div className="slider-controler">
-                <div className="swiper-button-prev slider-arrow">
+                <div className="swiper-button-prev slider-arrow animate__bounceInLeft">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                 </div>
-                <div className="swiper-button-next slider-arrow">
+                <div className="swiper-button-next slider-arrow animate__backInRight">
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -59,26 +134,29 @@ export default function Slider(props) {
 
         </Swiper>
     )
+    // function Slide() {
+    //     const [currentIndex, setCurrentIndex] = useState(0);
+    //     return (
+    //         <div className="grid md:grid-cols-2">
+    //             <div className="image">
+
+    //                 <Image src={props.slides[currentIndex].source} width={800} height={400} alt="This is an image." />
+    //             </div>
+    //             <div className="info flex justify-center flex-col">
+
+    //                 <div className="title">
+    //                     <p className="font-bold text-4xl pb-12">
+    //                         Title
+    //                     </p>
+    //                 </div>
+    //                 <p className="text-gray-500 py-3">
+    //                     Description
+    //                 </p>
+
+    //             </div>
+    //         </div>
+    //     )
+    // }
 }
 
-function Slide() {
-    return (
-        <div className="grid md:grid-cols-2">
-            <div className="image">
-                <Image src={"/sliderimage.png"} width={800} height={400} alt="This is an image." />
-            </div>
-            <div className="info flex justify-center flex-col">
 
-                <div className="title">
-                    <p className="font-bold text-4xl pb-12">
-                        Title
-                    </p>
-                </div>
-                <p className="text-gray-500 py-3">
-                    Description
-                </p>
-
-            </div>
-        </div>
-    )
-}

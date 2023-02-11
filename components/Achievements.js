@@ -4,10 +4,10 @@ import Slider from "../components/Slider";
 export default function Achievements() {
 
   const slides = [
-    { source: "/sliderimage.png", title: "kvt" },
-    { source: "/sliderimage.png", title: "kvt" },
-    { source: "/sliderimage.png", title: "kvt" },
-    { source: "/sliderimage.png", title: "kvt" },
+    { source: "/180DC.png", title: "kvt" },
+    { source: "/interIIT.png", title: "kvt" },
+    { source: "/astroClub.png", title: "kvt" },
+    { source: "/interIIT.png", title: "kvt" },
   ];
   return (
     <div id="achievements" className="relative top-[-40vh] lg:top-[-50vh]">
