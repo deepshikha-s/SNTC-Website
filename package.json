@@ -19,11 +19,12 @@
     "react-dom": "18.2.0",
     "react-tsparticles": "^2.7.1",
     "react-wavify": "^1.7.0",
+    "swiper": "^9.0.4",
     "tsparticles": "^2.7.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.6"
   }
 }
