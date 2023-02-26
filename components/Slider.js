@@ -46,22 +46,7 @@ export default function Slider(props) {
         >
             <SwiperSlide>
                 <div className="grid md:grid-cols-2">
-                    <div className="image">
-
-                        <Image src={props.slides[0].source} width={700} height={500} alt="This is an image." />
-                    </div>
-                    <div className="info flex justify-center flex-col">
-
-                        <div className="title">
-                            <p className="font-bold text-4xl pb-12">
-                                Title
-                            </p>
-                        </div>
-                        <p className="text-gray-500 py-3">
-                            Description
-                        </p>
-
-                    </div>
+                    <Image src={props.slides[0].source} width={700} height={500} alt="This is an image." />
                 </div>
             </SwiperSlide>
 
@@ -70,18 +55,7 @@ export default function Slider(props) {
 
                     <Image src={props.slides[1].source} width={800} height={400} alt="This is an image." />
                 </div>
-                <div className="info flex justify-center flex-col">
-
-                    <div className="title">
-                        <p className="font-bold text-4xl pb-12">
-                            Title
-                        </p>
-                    </div>
-                    <p className="text-gray-500 py-3">
-                        Description
-                    </p>
-
-                </div>
+                
             </div></SwiperSlide>
 
             <SwiperSlide> <div className="grid md:grid-cols-2">
@@ -89,36 +63,14 @@ export default function Slider(props) {
 
                     <Image src={props.slides[2].source} width={700} height={400} alt="This is an image." />
                 </div>
-                <div className="info flex justify-center flex-col">
-
-                    <div className="title">
-                        <p className="font-bold text-4xl pb-12">
-                            Title
-                        </p>
-                    </div>
-                    <p className="text-gray-500 py-3">
-                        Description
-                    </p>
-
-                </div>
+                
             </div></SwiperSlide>
 
-            <SwiperSlide> <div className="grid md:grid-cols-2">
+            <SwiperSlide> <div className="grid md:grid-cols-2 justify-center" >
                 <div className="image">
 
                     <Image src={props.slides[3].source} width={800} height={400} alt="This is an image." />
-                </div>
-                <div className="info flex justify-center flex-col">
-
-                    <div className="title">
-                        <p className="font-bold text-4xl pb-12">
-                            Title
-                        </p>
-                    </div>
-                    <p className="text-gray-500 py-3">
-                        Description
-                    </p>
-
+                    
                 </div>
             </div></SwiperSlide>
 
